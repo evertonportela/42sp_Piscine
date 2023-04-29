@@ -1,2 +1,0 @@
-touch \#arquivo# \#arquivo arquivo# arquivo~ \~arquivo
-mkdir \#dir# \#dir dir# dir~ \~dir
