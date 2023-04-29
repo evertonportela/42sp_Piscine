@@ -4,22 +4,26 @@
 	Piscine Mar 23
 </h2>
 
-<p>
-	[![evportel's 42 stats](https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=9&coalitionId=undefined)](https://github.com/JaeSeoKim/badge42)
-
-	Atividades desenvolvidas na Piscina de Março/2023
+<p align="center">
+	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=9&coalitionId=undefined" alt="evportel's 42 stats" /></a>
 </p>
 
-* [`ft_isascii`](libft/srcs/is/ft_isascii.c)			- test for ASCII character.
+<strong>Developed during Pool, March 2023.</strong><br>
 
+* [`EuAceito`](0.%20Piscine%20C/0.%20euaceito)			- First challenge involving git commands.
+* [`Shell 00`](0.%20Piscine%20C/1.%20shell00)			- Challenges involving shell terminal commands.
+* [`Shell 01`](0.%20Piscine%20C/2.%20shell01/)			- Challenges involving plus shell terminal commands.
 
-## Esqueta Abr 23
+<h2 align="center">
+	Warm Up Abr 23
+</h2>
 
-[![evportel's 42 stats](https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=60&coalitionId=undefined)](https://github.com/JaeSeoKim/badge42)
+<p align="center">
+	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=60&coalitionId=undefined" alt="evportel's 42 stats" /></a>
+</p>
 
-<p>Fase de recém cadetes - O Esquenta Abril/2023</p>
+<strong>Developed during the step cadet, April 2023 - The Project Warm Up.</strong><br>
 
-### P2P 101 - [![evportel's 42 P2P 101 Score](https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/project/3067899)](https://github.com/JaeSeoKim/badge42)
-
-### Basecamp-Reloaded - [![evportel's 42 Basecamp-Reloaded Score](https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/project/3067934)](https://github.com/JaeSeoKim/badge42)
+* [`P2P 101`](#)			- First challenge involving git commands.
+* [`Basecamp-Reloaded`](1.%2042cursus-WarmUp-SP/)			- Returning from the 42school selection process, remembering exercices.
 
