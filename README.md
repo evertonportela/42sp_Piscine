@@ -13,6 +13,8 @@
 * [`EuAceito`](0.%20Piscine%20C/0.%20euaceito)			- First challenge involving git commands.
 * [`Shell 00`](0.%20Piscine%20C/1.%20shell00)			- Challenges involving shell terminal commands.
 * [`Shell 01`](0.%20Piscine%20C/2.%20shell01/)			- Challenges involving plus shell terminal commands.
+* [`C 00`](0.%20Piscine%20C/3.%20C00/)					- Challenges involving C programm language.
+
 
 <h2 align="center">
 	Warm Up Abr 23
