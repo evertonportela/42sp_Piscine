@@ -1,0 +1,2 @@
+touch \#arquivo_sh.sh \#arquivo.sh arqui.shvo# arquivosh~ \~arquivosh
+mkdir \#dir.sh \#dirsh dir_sh dir~ \~dir
