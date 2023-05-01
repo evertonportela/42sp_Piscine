@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 
 int	main(void)
 {
-	int i = 0;
-	printf("\n");
-	while (i < 250)
-	{
-		printf("> %d", i);
-		printf(" %c", i);
-		printf(" %d\n", isprint(i));
-		i++;
-	}
+    char str[50] = "Hello, world!";
+    printf("Antes da memset(): %s\n", str);
+
+    memset(str, '*', 7);
+    printf("Depois da memset(): %s\n", str);
+
+    return 0;
 }
