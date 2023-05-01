@@ -1,4 +1,4 @@
-SOURCES			= ft_isalpha.c 
+SOURCES			= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c
 SOURCES			:= $(addprefix ./srcs/,$(SOURCES))
 
 OBJECTS			= $(SOURCES:./srcs/%.c=./objs/%.o)
