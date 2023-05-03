@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 16:41:40 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/03 18:17:30 by evportel         ###   ########.fr       */
+/*   Created: 2023/05/03 17:12:04 by evportel          #+#    #+#             */
+/*   Updated: 2023/05/03 18:10:50 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned long int	length;
 
 	length = 0;
+	if (src == NULL && dest == NULL)
+	{
+		return (NULL);
+	}
 	while (length < n)
 	{
-		((unsigned char *) s)[length] = '\0';
+		((unsigned char *) dest)[length] = ((unsigned char *) src)[length];
 		length++;
 	}
+	return (dest);
 }
