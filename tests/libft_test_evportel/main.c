@@ -105,12 +105,47 @@ int	main(void)
 	printf("\n* ft_bzero ***");
 	printf("\n* test_0 ******");
 	printf("\n***************\n");
-	char str_bzero_0[50] = "Hello, world!";
-	char str_ft_bzero_0[50] = "Hello, world!";
+	char	str_bzero_0[50] = "Hello, world!";
+	char	str_ft_bzero_0[50] = "Hello, world!";
 	bzero(str_bzero_0, 13);
 	ft_bzero(str_ft_bzero_0, 13);
     printf("bzero(): %s\n", str_bzero_0);
 	printf("ft_bzero(): %s\n", str_ft_bzero_0);
 
+	// printf("\n***************");
+	// printf("\n* ft_bzero ***");
+	// printf("\n* test_1 ******");
+	// printf("\n***************\n");
+	// char	str_bzero_1[50];
+	// char	str_ft_bzero_1[50];
+	// bzero(str_bzero_1, 13);
+	// ft_bzero(str_ft_bzero_1, 13);
+    // printf("bzero(): %s\n", str_bzero_1);
+	// printf("ft_bzero(): %s\n", str_ft_bzero_1);
+
+	printf("\n***************");
+	printf("\n* ft_memcpy ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char	source_0[50] = "Hello, world!";
+	char	str_memcpy_0[50];
+	char	str_ft_memcpy_0[50];
+	memcpy(str_memcpy_0, source_0, 5);
+	ft_memcpy(str_ft_memcpy_0, source_0, 5);
+    printf("memcpy(): %s\n", str_memcpy_0);
+	printf("ft_memcpy(): %s\n", str_ft_memcpy_0);
+
+
+	printf("\n***************");
+	printf("\n* ft_memcpy ***");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	char	source_1[50];
+	char	str_memcpy_1[50];
+	char	str_ft_memcpy_1[50];
+	memcpy(str_memcpy_1, source_1, 5);
+	ft_memcpy(str_ft_memcpy_1, source_1, 5);
+    printf("memcpy(): %s\n", str_memcpy_1);
+	printf("ft_memcpy(): %s\n", str_ft_memcpy_1);
 	return (0);
 }
