@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../libft/include/libft.h"
+#include "../libft/libft.h"
 
 int	main(void)
 {
@@ -85,23 +85,21 @@ int	main(void)
 	printf("\n* ft_memset ***");
 	printf("\n* test_0 ******");
 	printf("\n***************\n");
-	char str_metset[50] = "Hello, world!";
-	char str_ft_metset[50] = "Hello, world!";
-    memset(str_metset, '*', 7);
-	ft_memset(str_ft_metset, '*', 7);
-    printf("memset(): %s\n", str_metset);
-	printf("ft_memset(): %s\n", str_ft_metset);
+	char str_metset_0[50] = "Hello, world!";
+	char str_ft_metset_0[50] = "Hello, world!";
+    memset(str_metset_0, '*', 7);
+	ft_memset(str_ft_metset_0, '*', 7);
+    printf("memset(): %s\n", str_metset_0);
+	printf("ft_memset(): %s\n", str_ft_metset_0);
 
 	printf("\n***************");
-	printf("\n* ft_memset ***");
-	printf("\n* test_1 ******");
+	printf("\n* ft_strlen ***");
+	printf("\n* test_0 ******");
 	printf("\n***************\n");
-	str_metset[50] = "Hello, world!";
-	str_ft_metset[50] = "Hello, world!";
-    memset(str_metset, '*', 7);
-	ft_memset(str_ft_metset, '*', 7);
-    printf("memset(): %s\n", str_metset);
-	printf("ft_memset(): %s\n", str_ft_metset);
+	char str_strlen_0[50] = "Hello, world!";
+	char str_ft_strlen_0[50] = "Hello, world!";
+    printf("strlen(): %lu\n", strlen(str_strlen_0));
+	printf("ft_strlen(): %lu\n", ft_strlen(str_ft_strlen_0));
 
 	return (0);
 }
