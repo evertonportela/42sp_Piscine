@@ -99,7 +99,18 @@ int	main(void)
 	char str_strlen_0[50] = "Hello, world!";
 	char str_ft_strlen_0[50] = "Hello, world!";
     printf("strlen(): %lu\n", strlen(str_strlen_0));
-	printf("ft_strlen(): %lu\n", ft_strlen(str_ft_strlen_0));
+	printf("ft_strlen(): %zu\n", ft_strlen(str_ft_strlen_0));
+
+	printf("\n***************");
+	printf("\n* ft_bzero ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char str_bzero_0[50] = "Hello, world!";
+	char str_ft_bzero_0[50] = "Hello, world!";
+	bzero(str_bzero_0, 13);
+	ft_bzero(str_ft_bzero_0, 13);
+    printf("bzero(): %s\n", str_bzero_0);
+	printf("ft_bzero(): %s\n", str_ft_bzero_0);
 
 	return (0);
 }
