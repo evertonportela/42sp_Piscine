@@ -1,24 +1,20 @@
 SOURCES			= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c\
-				ft_isprint.c ft_memset.c
-SOURCES			:= $(addprefix ./srcs/,$(SOURCES))
+				ft_isprint.c ft_memset.c ft_strlen.c
 
-OBJECTS			= $(SOURCES:./srcs/%.c=./objs/%.o)
+OBJECTS			= $(SOURCES:%.c=%.o)
 
 NAME			= libft.a
-CC				= gcc
+CC				= cc
 FLAGS			= -Wall -Wextra -Werror
 RM				= rm -f
 
-all:			mkdir_objs $(NAME)
-
-mkdir_objs:
-	mkdir -p objs
+all:			$(NAME)
 
 $(NAME):	$(OBJECTS)
 	ar -rcs $(NAME) $(OBJECTS)
 
 objs/%.o:		srcs/%.c
-	$(CC) $(FLAGS) -I ./include -c $< -o $@
+	$(CC) $(FLAGS) -I ./libft.h -c $< -o $@
 
 clean:
 	$(RM) $(OBJECTS)
