@@ -6,20 +6,20 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 15:24:05 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/03 16:07:35 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/03 16:40:12 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
-	size_t	l;
+	unsigned long int	length;
 
-	l = 0;
-	while (str[l])
+	length = 0;
+	while (s[length])
 	{
-		l++;
+		length++;
 	}
-	return (l);
+	return (length);
 }
