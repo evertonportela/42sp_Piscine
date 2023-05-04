@@ -218,5 +218,25 @@ int	main(void)
 	printf("ft_strlcat = %zu\n", ft_strlcat(str_ft_strlcat_1, strlcat_src_1, 50));
 	printf("ft_strlcat: %s\n", str_ft_strlcat_1);
 
+	printf("\n***************");
+	printf("\n* ft_toupper **");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	printf("   toupper: %d\n", toupper('z'));
+	printf("ft_toupper: %d\n", ft_toupper('z'));
+
+	printf("\n***************");
+	printf("\n* ft_toupper **");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	printf("   toupper: %d\n", toupper(1));
+	printf("ft_toupper: %d\n", ft_toupper(1));
+
+	printf("\n***************");
+	printf("\n* ft_toupper **");
+	printf("\n* test_2 ******");
+	printf("\n***************\n");
+	printf("   toupper: %d\n", toupper(500));
+	printf("ft_toupper: %d\n", ft_toupper(500));
 	return (0);
 }
