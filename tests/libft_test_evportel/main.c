@@ -1,7 +1,8 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+//#include <string.h>
+#include <bsd/string.h>
 #include "../libft/libft.h"
 
 int	main(void)
@@ -102,7 +103,7 @@ int	main(void)
 	printf("ft_strlen(): %zu\n", ft_strlen(str_ft_strlen_0));
 
 	printf("\n***************");
-	printf("\n* ft_bzero ***");
+	printf("\n* ft_bzero ****");
 	printf("\n* test_0 ******");
 	printf("\n***************\n");
 	char	str_bzero_0[50] = "Hello, world!";
@@ -147,5 +148,29 @@ int	main(void)
 	ft_memcpy(str_ft_memcpy_1, source_1, 5);
     printf("memcpy(): %s\n", str_memcpy_1);
 	printf("ft_memcpy(): %s\n", str_ft_memcpy_1);
+
+	printf("\n***************");
+	printf("\n* ft_memmove **");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char	str_memmove_0[50] = "Hello, world!";
+	char	str_ft_memmove_0[50] = "Hello, world!";
+	memmove(str_memmove_0 + 6, str_memmove_0, strlen(str_memmove_0) + 1);
+	ft_memmove(str_ft_memmove_0 + 6, str_ft_memmove_0, ft_strlen(str_ft_memmove_0) + 1);
+    printf("memmove(): %s\n", str_memmove_0);
+	printf("ft_memmove(): %s\n", str_ft_memmove_0);
+	
+	printf("\n***************");
+	printf("\n* ft_strlcpy **");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char	strlpy_src_0[] = "Hello, world!";
+	// char	str_strlcpy_0[6];
+	char	str_ft_strlcpy_0[5];
+	// strlcpy(str_strlcpy_0, strlpy_src_0, sizeof(str_strlcpy_0));
+	// printf("strlcpy(): %s\n", str_strlcpy_0);
+	printf("ft_strlcpy = %zu\n", ft_strlcpy(str_ft_strlcpy_0, strlpy_src_0, sizeof(str_ft_strlcpy_0)));
+	printf("ft_strlcpy(): %s\n", str_ft_strlcpy_0);
+	
 	return (0);
 }
