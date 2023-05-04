@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:12:04 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/04 10:50:43 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/04 11:47:05 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	count;
+	unsigned long int	count;
 
-	if (src == NULL && dest == NULL)
+	count = 0;
+	while (count < (size - 1) && src[count] != '\0')
 	{
-		return (NULL);
+		dest[count] = src[count];
+		count++;
 	}
-	if (dest < src)
+	dest[count] = '\0';
+	while (src[count] != '\0')
 	{
-		count = 0;
-		while (count < n)
-		{
-			((char *) dest)[count] = ((char *) src)[count];
-			count++;
-		}
+		count++;
 	}
-	else
-	{
-		count = n;
-		while (count > 0)
-		{
-			((char *) dest)[count - 1] = ((char *) src)[count - 1];
-			count--;
-		}
-	}
-	return (dest);
+	return (count);
 }
