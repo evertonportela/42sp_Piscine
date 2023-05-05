@@ -275,5 +275,54 @@ int	main(void)
 	char str_strchr_source_1[] = "Hello, World!";
 	printf("   strchr: %p -> %s\n", strchr(str_strchr_source_1, '0'), strchr(str_strchr_source_1, '0'));
 	printf("ft_strchr: %p -> %s\n", ft_strchr(str_strchr_source_1, '0'), ft_strchr(str_strchr_source_1, '0'));
+
+	printf("\n***************");
+	printf("\n* ft_strchr ***");
+	printf("\n* test_2 ******");
+	printf("\n***************\n");
+	char str_strchr_source_2[] = "Hello, World!";
+	printf("   strchr: %p -> %s\n", strchr(str_strchr_source_2, '\0'), strchr(str_strchr_source_2, '\0'));
+	printf("ft_strchr: %p -> %s\n", ft_strchr(str_strchr_source_2, '\0'), ft_strchr(str_strchr_source_2, '\0'));
+
+	printf("\n***************");
+	printf("\n* ft_strchr ***");
+	printf("\n* test_3 ******");
+	printf("\n***************\n");
+	char str_strchr_source_3[] = "Hello, World!";
+	printf("   strchr: %p -> %s\n", strchr(str_strchr_source_3, 'l'), strchr(str_strchr_source_3, 'l'));
+	printf("ft_strchr: %p -> %s\n", ft_strchr(str_strchr_source_3, 'l'), ft_strchr(str_strchr_source_3, 'l'));
+
+	printf("\n***************");
+	printf("\n* ft_strrchr ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char str_strrchr_source_0[] = "Hello, World!";
+	printf("   strrchr: %p -> %s\n", strrchr(str_strrchr_source_0, '!'), strrchr(str_strrchr_source_0, '!'));
+	printf("ft_strrchr: %p -> %s\n", ft_strrchr(str_strrchr_source_0, '!'), ft_strrchr(str_strrchr_source_0, '!'));
+
+	printf("\n***************");
+	printf("\n* ft_strrchr ***");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	char str_strrchr_source_1[] = "Hello, World!";
+	printf("   strrchr: %p -> %s\n", strrchr(str_strrchr_source_1, '0'), strrchr(str_strrchr_source_1, '0'));
+	printf("ft_strrchr: %p -> %s\n", ft_strrchr(str_strrchr_source_1, '0'), ft_strrchr(str_strrchr_source_1, '0'));
+
+	printf("\n***************");
+	printf("\n* ft_strrchr ***");
+	printf("\n* test_2 ******");
+	printf("\n***************\n");
+	char str_strrchr_source_2[] = "Hello, World!";
+	printf("   strrchr: %p -> %s\n", strrchr(str_strrchr_source_2, '\0'), strrchr(str_strrchr_source_2, '\0'));
+	printf("ft_strrchr: %p -> %s\n", ft_strrchr(str_strrchr_source_2, '\0'), ft_strrchr(str_strrchr_source_2, '\0'));
+
+	printf("\n***************");
+	printf("\n* ft_strrchr ***");
+	printf("\n* test_3 ******");
+	printf("\n***************\n");
+	char str_strrchr_source_3[] = "Hello, World!";
+	printf("   strrchr: %p -> %s\n", strrchr(str_strrchr_source_3, 'l'), strrchr(str_strrchr_source_3, 'l'));
+	printf("ft_strrchr: %p -> %s\n", ft_strrchr(str_strrchr_source_3, 'l'), ft_strrchr(str_strrchr_source_3, 'l'));
+
 	return (0);
 }
