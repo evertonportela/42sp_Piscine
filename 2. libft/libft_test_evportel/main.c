@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../libft/libft.h"
+#include "../libft.h"
 
 int	main(void)
 {
@@ -222,21 +222,58 @@ int	main(void)
 	printf("\n* ft_toupper **");
 	printf("\n* test_0 ******");
 	printf("\n***************\n");
-	printf("   toupper: %d\n", toupper('z'));
-	printf("ft_toupper: %d\n", ft_toupper('z'));
+	printf("   toupper: %d -> %c\n", toupper('z'), toupper('z'));
+	printf("ft_toupper: %d -> %c\n", ft_toupper('z'), ft_toupper('z'));
 
 	printf("\n***************");
 	printf("\n* ft_toupper **");
 	printf("\n* test_1 ******");
 	printf("\n***************\n");
-	printf("   toupper: %d\n", toupper(1));
-	printf("ft_toupper: %d\n", ft_toupper(1));
+	printf("   toupper: %d -> %c\n", toupper(1), toupper(1));
+	printf("ft_toupper: %d -> %c\n", ft_toupper(1), ft_toupper(1));
 
 	printf("\n***************");
 	printf("\n* ft_toupper **");
 	printf("\n* test_2 ******");
 	printf("\n***************\n");
-	printf("   toupper: %d\n", toupper(500));
-	printf("ft_toupper: %d\n", ft_toupper(500));
+	printf("   toupper: %d -> %c\n", toupper(500), toupper(500));
+	printf("ft_toupper: %d -> %c\n", ft_toupper(500), ft_toupper(500));
+
+	printf("\n***************");
+	printf("\n* ft_tolower **");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	printf("   tolower: %d -> %c\n", tolower('Z'), tolower('Z'));
+	printf("ft_tolower: %d -> %c\n", ft_tolower('Z'), ft_tolower('Z'));
+
+	printf("\n***************");
+	printf("\n* ft_tolower **");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	printf("   tolower: %d -> %c\n", tolower(1), tolower(1));
+	printf("ft_tolower: %d -> %c\n", ft_tolower(1), ft_tolower(1));
+
+	printf("\n***************");
+	printf("\n* ft_tolower **");
+	printf("\n* test_2 ******");
+	printf("\n***************\n");
+	printf("   tolower: %d -> %c\n", tolower(500), tolower(500));
+	printf("ft_tolower: %d -> %c\n", ft_tolower(500), ft_tolower(500));	
+
+	printf("\n***************");
+	printf("\n* ft_strchr ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char str_strchr_source_0[] = "Hello, World!";
+	printf("   strchr: %p -> %s\n", strchr(str_strchr_source_0, '!'), strchr(str_strchr_source_0, '!'));
+	printf("ft_strchr: %p -> %s\n", ft_strchr(str_strchr_source_0, '!'), ft_strchr(str_strchr_source_0, '!'));
+
+	printf("\n***************");
+	printf("\n* ft_strchr ***");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	char str_strchr_source_1[] = "Hello, World!";
+	printf("   strchr: %p -> %s\n", strchr(str_strchr_source_1, '0'), strchr(str_strchr_source_1, '0'));
+	printf("ft_strchr: %p -> %s\n", ft_strchr(str_strchr_source_1, '0'), ft_strchr(str_strchr_source_1, '0'));
 	return (0);
 }
