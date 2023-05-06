@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 10:35:33 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/05 14:42:40 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/06 16:57:24 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 char	*ft_strchr(const char *s, int c)
 {
 	int	index;
-	
+
 	index = 0;
+	if (s[index] == 0)
+		return ((char *)s);
 	while (s[index])
 	{
 		if (s[index] == (unsigned char)c)
