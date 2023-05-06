@@ -20,10 +20,6 @@
 	Warm Up Abr 23
 </h2>
 
-<p align="center">
-	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=60&coalitionId=undefined" alt="evportel's 42 stats" /></a>
-</p>
-
 <strong>Developed during the step cadet, April 2023 - The Project Warm Up.</strong><br>
 
 * [`P2P 101`](#)			- First challenge involving git commands.
