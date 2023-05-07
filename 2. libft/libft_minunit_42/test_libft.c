@@ -380,7 +380,6 @@ MU_TEST(strlen_should_return_0_when_string_have_length_0)
 }
 
 /* Test - memset */
-//mu_assert_string_eq
 MU_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero)
 {
 	char	tested_char[100];
@@ -393,6 +392,22 @@ MU_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero)
 	
 	mu_assert_string_eq(expected_result, actual_result);
 	/* TRUE se a posição de memória recebida em actual_result for igual a posição zero do vetor tested_char */
+}
+
+MU_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector)
+{
+	char	tested_char[100];
+	int		expected_result = 42; /* true */
+	
+	int		actual_result;
+	actual_result = 0;
+	ft_memset(tested_char, 'A', 42);
+
+	while (tested_char[actual_result] == 'A')
+	{
+		actual_result++;
+	}
+	mu_assert_int_eq(expected_result, actual_result);
 }
 
 MU_TEST_SUITE(test_suite)
@@ -445,6 +460,7 @@ MU_TEST_SUITE(test_suite)
 
 	write(1,"\ntest ft_memset ", 17);
 	MU_RUN_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero);
+	MU_RUN_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector);
 }
 
 int	main(void)
