@@ -410,6 +410,58 @@ MU_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector)
 	mu_assert_int_eq(expected_result, actual_result);
 }
 
+MU_TEST(bzero_must_not_modify_array_when_n_is_zero) 
+{
+	char	tested_char[100];
+	int		expected_result = 42; /* true */
+	
+	int		actual_result;
+	ft_memset(tested_char, 'A', 42);
+	ft_bzero(tested_char, 0);
+
+	actual_result = 0;
+	while (tested_char[actual_result] == 'A')
+	{
+		actual_result++;
+	}
+	mu_assert_int_eq(expected_result, actual_result);
+}
+
+MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42) 
+{
+	char	tested_char[100];
+	int		expected_result = 42; /* true */
+	
+	int		actual_result;
+	ft_memset(tested_char, 'A', 42);
+	ft_bzero(tested_char, 42);
+
+	actual_result = 0;
+	while (tested_char[actual_result] == 0)
+	{
+		actual_result++;
+	}
+	mu_assert_int_eq(expected_result, actual_result);
+}
+
+MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle) 
+{
+	char	tested_char[100];
+	int		expected_result = 42; /* true */
+	
+	int		actual_result;
+	ft_memset(tested_char, 'A', 42);
+	tested_char[10] = 0;
+	ft_bzero(tested_char, 42);
+
+	actual_result = 0;
+	while (tested_char[actual_result] == 0)
+	{
+		actual_result++;
+	}
+	mu_assert_int_eq(expected_result, actual_result);
+}
+
 MU_TEST_SUITE(test_suite)
 {
 	write(1,"test ft_isalpha ", 17);
@@ -461,6 +513,11 @@ MU_TEST_SUITE(test_suite)
 	write(1,"\ntest ft_memset ", 17);
 	MU_RUN_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero);
 	MU_RUN_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector);
+
+	write(1,"\ntest ft_bzero ", 16);
+	MU_RUN_TEST(bzero_must_not_modify_array_when_n_is_zero);
+	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42);
+	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle);
 }
 
 int	main(void)
