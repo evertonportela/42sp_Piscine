@@ -1,5 +1,5 @@
 all:
 	clear
-	cc -Wall -Wextra -Werror test_libft.c ../libft.a
+	cc -Wall -Wextra -Werror *.c ../libft.a
 	clear
 	./a.out

@@ -340,5 +340,50 @@ int	main(void)
 	printf("   strrchr: %p -> %s\n", strrchr(str_strrchr_source_4, 0), strrchr(str_strrchr_source_4, 0));
 	printf("ft_strrchr: %p -> %s\n", ft_strrchr(str_strrchr_source_4, 0), ft_strrchr(str_strrchr_source_4, 0));
 
+	printf("\n***************");
+	printf("\n* ft_strncmp ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char str_strncmp_source_0[] = "Hello, World!";
+	char str_strncmp_cmp_0[] = "Hello, World!";
+	printf("   strncmp: %d\n", strncmp(str_strncmp_source_0, str_strncmp_cmp_0, 5));
+	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_0, str_strncmp_cmp_0, 5));
+
+	printf("\n***************");
+	printf("\n* ft_strncmp ***");
+	printf("\n* test_1 ******");
+	printf("\n***************\n");
+	char str_strncmp_source_1[] = "Hello, World!";
+	char str_strncmp_cmp_1[] = "Hello, world!";
+	printf("   strncmp: %d\n", strncmp(str_strncmp_source_1, str_strncmp_cmp_1, 5));
+	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_1, str_strncmp_cmp_1, 5));
+
+	printf("\n***************");
+	printf("\n* ft_strncmp ***");
+	printf("\n* test_2 ******");
+	printf("\n***************\n");
+	char str_strncmp_source_2[] = "Hello, World!";
+	char str_strncmp_cmp_2[] = "";
+	printf("   strncmp: %d\n", strncmp(str_strncmp_source_2, str_strncmp_cmp_2, 5));
+	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_2, str_strncmp_cmp_2, 5));
+
+	printf("\n***************");
+	printf("\n* ft_strncmp ***");
+	printf("\n* test_3 ******");
+	printf("\n***************\n");
+	char str_strncmp_source_3[] = "Hello, World!";
+	char str_strncmp_cmp_3[] = "Hello, world!";
+	printf("   strncmp: %d\n", strncmp(str_strncmp_source_3, str_strncmp_cmp_3, 0));
+	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_3, str_strncmp_cmp_3, 0));
+
+	printf("\n***************");
+	printf("\n* ft_strncmp ***");
+	printf("\n* test_4 ******");
+	printf("\n***************\n");
+	char str_strncmp_source_4[] = "Hello, World!";
+	char str_strncmp_cmp_4[] = "Hello, world!";
+	printf("   strncmp: %d\n", strncmp(str_strncmp_source_4, str_strncmp_cmp_4, 17));
+	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_4, str_strncmp_cmp_4, 17));
+
 	return (0);
 }
