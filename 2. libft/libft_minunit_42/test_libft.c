@@ -410,6 +410,7 @@ MU_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector)
 	mu_assert_int_eq(expected_result, actual_result);
 }
 
+/* Test - bzero */
 MU_TEST(bzero_must_not_modify_array_when_n_is_zero) 
 {
 	char	tested_char[100];
@@ -460,6 +461,19 @@ MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_nul
 		actual_result++;
 	}
 	mu_assert_int_eq(expected_result, actual_result);
+}
+
+/* Test - memcpy */
+MU_TEST(memcpy_must_not_modify_array_when_n_has_zero_size) 
+{
+	char	tested_char[100];
+	char	*expected_result = &tested_char[0]; /* true */
+	
+	char	*actual_result;
+	ft_memset(tested_char, 'A', 42);
+	actual_result = ft_memcpy(tested_char, "Viemos em paz", 0);
+
+	mu_assert_string_eq(expected_result, actual_result);
 }
 
 MU_TEST_SUITE(test_suite)
@@ -518,6 +532,9 @@ MU_TEST_SUITE(test_suite)
 	MU_RUN_TEST(bzero_must_not_modify_array_when_n_is_zero);
 	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42);
 	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle);
+
+	write(1,"\ntest ft_memcpy ", 17);
+	MU_RUN_TEST(memcpy_must_not_modify_array_when_n_has_zero_size);
 }
 
 int	main(void)
