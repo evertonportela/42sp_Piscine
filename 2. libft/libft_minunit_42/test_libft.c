@@ -1,10 +1,6 @@
 #include "minunit.h"
 #include "../libft.h"
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-
-
 /* Test - isalpha */
 MU_TEST(isalpha_should_return_true_when_letter_a)
 {
@@ -476,6 +472,31 @@ MU_TEST(memcpy_must_not_modify_array_when_n_has_zero_size)
 	mu_assert_string_eq(expected_result, actual_result);
 }
 
+MU_TEST(memcpy_must_not_modify_array_when_src_is_null)
+{
+	char	tested_char[100];
+	char	*expected_result = &tested_char[0]; /* true */
+	
+	char	*actual_result;
+	ft_memset(tested_char, 'A', 42);
+	actual_result = ft_memcpy(tested_char, NULL, 0);
+
+	mu_assert_string_eq(expected_result, actual_result);
+}
+
+MU_TEST(memcpy_must_copy_two_positions_to_array_dest)
+{
+	char	tested_char[100];
+	char	*expected_result = &tested_char[0]; /* true */
+	char	source[] = {'B', 'B'};
+	
+	char	*actual_result;
+	ft_memset(tested_char, 'A', 42);
+	actual_result = ft_memcpy(tested_char, source, 2);
+
+	mu_assert_string_eq(&expected_result[1], &actual_result[1]);
+}
+
 MU_TEST_SUITE(test_suite)
 {
 	write(1,"test ft_isalpha ", 17);
@@ -535,6 +556,8 @@ MU_TEST_SUITE(test_suite)
 
 	write(1,"\ntest ft_memcpy ", 17);
 	MU_RUN_TEST(memcpy_must_not_modify_array_when_n_has_zero_size);
+	MU_RUN_TEST(memcpy_must_not_modify_array_when_src_is_null);
+	MU_RUN_TEST(memcpy_must_copy_two_positions_to_array_dest);
 }
 
 int	main(void)
