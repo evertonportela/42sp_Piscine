@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:12:04 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/04 15:50:21 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/08 10:30:52 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	int	end;
-	int	count;
+	unsigned long int	end;
+	unsigned long int	count;
 
 	if (size == 0)
 	{

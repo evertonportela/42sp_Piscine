@@ -390,7 +390,7 @@ MU_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero)
 	/* TRUE se a posição de memória recebida em actual_result for igual a posição zero do vetor tested_char */
 }
 
-MU_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector)
+MU_TEST(memset_should_fill_42_positions_with_the_letter_A_in_the_test_vector)
 {
 	char	tested_char[100];
 	int		expected_result = 42; /* true */
@@ -407,7 +407,7 @@ MU_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector)
 }
 
 /* Test - bzero */
-MU_TEST(bzero_must_not_modify_array_when_n_is_zero) 
+MU_TEST(bzero_should_not_modify_array_when_n_is_zero) 
 {
 	char	tested_char[100];
 	int		expected_result = 42; /* true */
@@ -424,7 +424,7 @@ MU_TEST(bzero_must_not_modify_array_when_n_is_zero)
 	mu_assert_int_eq(expected_result, actual_result);
 }
 
-MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42) 
+MU_TEST(bzero_should_modify_42_vector_positions_when_n_is_42) 
 {
 	char	tested_char[100];
 	int		expected_result = 42; /* true */
@@ -441,7 +441,7 @@ MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42)
 	mu_assert_int_eq(expected_result, actual_result);
 }
 
-MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle) 
+MU_TEST(bzero_should_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle) 
 {
 	char	tested_char[100];
 	int		expected_result = 42; /* true */
@@ -460,7 +460,7 @@ MU_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_nul
 }
 
 /* Test - memcpy */
-MU_TEST(memcpy_must_not_modify_array_when_n_has_zero_size) 
+MU_TEST(memcpy_should_not_modify_array_when_n_has_zero_size) 
 {
 	char	tested_char[100];
 	char	*expected_result = &tested_char[0]; /* true */
@@ -472,7 +472,7 @@ MU_TEST(memcpy_must_not_modify_array_when_n_has_zero_size)
 	mu_assert_string_eq(expected_result, actual_result);
 }
 
-MU_TEST(memcpy_must_not_modify_array_when_src_is_null)
+MU_TEST(memcpy_should_not_modify_array_when_src_is_null)
 {
 	char	tested_char[100];
 	char	*expected_result = &tested_char[0]; /* true */
@@ -484,7 +484,7 @@ MU_TEST(memcpy_must_not_modify_array_when_src_is_null)
 	mu_assert_string_eq(expected_result, actual_result);
 }
 
-MU_TEST(memcpy_must_copy_two_positions_to_array_dest)
+MU_TEST(memcpy_should_copy_two_positions_to_array_dest)
 {
 	char	tested_char[100];
 	char	*expected_result = &tested_char[0]; /* true */
@@ -496,6 +496,74 @@ MU_TEST(memcpy_must_copy_two_positions_to_array_dest)
 
 	mu_assert_string_eq(&expected_result[1], &actual_result[1]);
 }
+
+/* Test - memmove */
+MU_TEST(memmove_should_copy_all_positions_from_source_to_destination)
+{
+	char	expected_result[] = {'A', 'B', 'C', 'D', 'E', 0, '-'}; /* true */
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 0, '-'};
+	
+	char	actual_result[7];
+	
+	mu_assert_string_eq(expected_result, ft_memmove(actual_result, source, 7));
+}
+
+MU_TEST(memmove_should_not_alter_destination_array_when_n_is_zero)
+{
+	char	expected_result[] = ""; /* true */
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 0, '-'};
+	
+	char	actual_result[7] = "";
+	
+	mu_assert_string_eq(expected_result, ft_memmove(actual_result, source, 0));
+}
+
+MU_TEST(memmove_should_copy_five_positions_overlapping_memory_area)
+{
+	char	expected_result[] = {'A', 'B', 'C', 'D', 'E', 0}; /* true */
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 0, '-', 0};
+
+	mu_assert_string_eq(expected_result, ft_memmove(source + 2, source, 5));
+}
+
+MU_TEST(memmove_must_copy_five_positions_overlapping_the_previous_area_in_source_memory)
+{
+	char	expected_result[] = {'C', 'D', 'E', 0}; /* true */
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 0, '-', 0};
+
+	mu_assert_string_eq(expected_result, ft_memmove(source, source + 2, 4));
+}
+
+/* Test - strlcpy */
+MU_TEST(strlcpy_should_not_alter_dest_array_when_n_is_zero)
+{
+	char	expected_result[] = ""; /* true */
+	char	tested_array[] = "";
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+
+	ft_strlcpy(tested_array, source, 0);
+	mu_assert_string_eq(expected_result, tested_array);
+}
+
+MU_TEST(strlcpy_should_return_length_src_array_when_n_is_zero)
+{
+	int		expected_result = 7; /* true */
+	char	tested_array[] = "";
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+
+	mu_assert_int_eq(expected_result, ft_strlcpy(tested_array, source, 0));
+}
+
+MU_TEST(strlcpy_copies_only_character_null_when_n_is_1)
+{
+	char	expected_result[] = {0}; 	/* \0 */ /* true */
+	char	tested_array[] = "";
+	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+
+	ft_strlcpy(tested_array, source, 0);
+	mu_assert_string_eq(expected_result, tested_array);
+}
+
 
 MU_TEST_SUITE(test_suite)
 {
@@ -547,17 +615,28 @@ MU_TEST_SUITE(test_suite)
 
 	write(1,"\ntest ft_memset ", 17);
 	MU_RUN_TEST(memset_should_return_the_pointer_to_position_zero_when_n_is_zero);
-	MU_RUN_TEST(memset_must_fill_42_positions_with_the_letter_A_in_the_test_vector);
+	MU_RUN_TEST(memset_should_fill_42_positions_with_the_letter_A_in_the_test_vector);
 
 	write(1,"\ntest ft_bzero ", 16);
-	MU_RUN_TEST(bzero_must_not_modify_array_when_n_is_zero);
-	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42);
-	MU_RUN_TEST(bzero_must_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle);
+	MU_RUN_TEST(bzero_should_not_modify_array_when_n_is_zero);
+	MU_RUN_TEST(bzero_should_modify_42_vector_positions_when_n_is_42);
+	MU_RUN_TEST(bzero_should_modify_42_vector_positions_when_n_is_42_even_when_finding_null_character_in_the_middle);
 
 	write(1,"\ntest ft_memcpy ", 17);
-	MU_RUN_TEST(memcpy_must_not_modify_array_when_n_has_zero_size);
-	MU_RUN_TEST(memcpy_must_not_modify_array_when_src_is_null);
-	MU_RUN_TEST(memcpy_must_copy_two_positions_to_array_dest);
+	MU_RUN_TEST(memcpy_should_not_modify_array_when_n_has_zero_size);
+	MU_RUN_TEST(memcpy_should_not_modify_array_when_src_is_null);
+	MU_RUN_TEST(memcpy_should_copy_two_positions_to_array_dest);
+	
+	write(1,"\ntest ft_memmove ", 18);
+	MU_RUN_TEST(memmove_should_copy_all_positions_from_source_to_destination);
+	MU_RUN_TEST(memmove_should_not_alter_destination_array_when_n_is_zero);
+	MU_RUN_TEST(memmove_should_copy_five_positions_overlapping_memory_area);
+	MU_RUN_TEST(memmove_must_copy_five_positions_overlapping_the_previous_area_in_source_memory);
+
+	write(1,"\ntest ft_strlcpy ", 18);
+	MU_RUN_TEST(strlcpy_should_not_alter_dest_array_when_n_is_zero);
+	MU_RUN_TEST(strlcpy_should_return_length_src_array_when_n_is_zero);
+	MU_RUN_TEST(strlcpy_copies_only_character_null_when_n_is_1);
 }
 
 int	main(void)

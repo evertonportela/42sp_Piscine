@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:12:04 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/04 10:50:43 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/08 11:09:45 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	count;
+	unsigned long int	count;
 
 	if (src == NULL && dest == NULL)
 	{

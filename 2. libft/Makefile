@@ -6,7 +6,7 @@
 #    By: evportel <evportel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 10:41:40 by evportel          #+#    #+#              #
-#    Updated: 2023/05/06 17:22:40 by evportel         ###   ########.fr        #
+#    Updated: 2023/05/08 10:09:43 by evportel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ all:			$(NAME)
 $(NAME):	$(OBJECTS)
 	ar -rcs $(NAME) $(OBJECTS)
 
-objs/%.o:		srcs/%.c
+# objs/%.o:		srcs/%.c
+%.o:		%.c
 	$(CC) $(FLAGS) -I ./libft.h -c $< -o $@
 
 clean:
