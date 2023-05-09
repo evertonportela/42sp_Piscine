@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:12:04 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/08 10:30:52 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/09 11:15:46 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,25 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned long int	end;
-	unsigned long int	count;
+	size_t	len_dest;
+	size_t	len_src;
+	size_t	count;
 
-	if (size == 0)
+	len_src = ft_strlen(src);
+	len_dest = 0;
+	while (dest[len_dest] && len_dest < size)
 	{
-		return (ft_strlen(src));
+		len_dest++;
 	}
-	end = ft_strlen(dest);
 	count = 0;
-	while (count < (size) && dest[count] != '\0')
+	if (len_dest < size)
 	{
-		dest[end + count] = src[count];
-		count++;
+		while ((count + len_dest) < (size - 1) && src[count] != '\0')
+		{
+			dest[count + len_dest] = src[count];
+			count++;
+		}
+		dest[count + len_dest] = '\0';
 	}
-	dest[end + count] = '\0';
-	return (ft_strlen(src));
+	return (len_dest + len_src);
 }

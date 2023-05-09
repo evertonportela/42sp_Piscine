@@ -534,12 +534,12 @@ MU_TEST(memmove_must_copy_five_positions_overlapping_the_previous_area_in_source
 	mu_assert_string_eq(expected_result, ft_memmove(source, source + 2, 4));
 }
 
-/* Test - strlcpy */
+/* Test - strlcpy */ //- implementar os testes 5 6 7 8 e 9 
 MU_TEST(strlcpy_should_not_alter_dest_array_when_n_is_zero)
 {
 	char	expected_result[] = ""; /* true */
 	char	tested_array[] = "";
-	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+	char	source[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'};
 
 	ft_strlcpy(tested_array, source, 0);
 	mu_assert_string_eq(expected_result, tested_array);
@@ -549,7 +549,7 @@ MU_TEST(strlcpy_should_return_length_src_array_when_n_is_zero)
 {
 	int		expected_result = 7; /* true */
 	char	tested_array[] = "";
-	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+	char	source[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'};
 
 	mu_assert_int_eq(expected_result, ft_strlcpy(tested_array, source, 0));
 }
@@ -558,12 +558,31 @@ MU_TEST(strlcpy_copies_only_character_null_when_n_is_1)
 {
 	char	expected_result[] = {0}; 	/* \0 */ /* true */
 	char	tested_array[] = "";
-	char	source[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+	char	source[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'};
 
 	ft_strlcpy(tested_array, source, 0);
 	mu_assert_string_eq(expected_result, tested_array);
 }
 
+MU_TEST(strlcpy_copy_one_positions_ending_wiht_null)
+{
+	char	expected_result[8] = {'A', '\0'}; 	/* true */
+	char	tested_array[8] = "";
+	char	source[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'};
+
+	ft_strlcpy(tested_array, source, 2);
+	mu_assert_string_eq(expected_result, tested_array);
+}
+
+MU_TEST(strlcpy_should_copy_positions_when_size_negative)
+{
+	char	expected_result[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'}; 	/* true */
+	char	tested_array[8] = "";
+	char	source[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', '\0'};
+
+	ft_strlcpy(tested_array, source, -5);
+	mu_assert_string_eq(expected_result, tested_array);
+}
 
 MU_TEST_SUITE(test_suite)
 {
@@ -637,6 +656,8 @@ MU_TEST_SUITE(test_suite)
 	MU_RUN_TEST(strlcpy_should_not_alter_dest_array_when_n_is_zero);
 	MU_RUN_TEST(strlcpy_should_return_length_src_array_when_n_is_zero);
 	MU_RUN_TEST(strlcpy_copies_only_character_null_when_n_is_1);
+	MU_RUN_TEST(strlcpy_copy_one_positions_ending_wiht_null);
+	MU_RUN_TEST(strlcpy_should_copy_positions_when_size_negative);
 }
 
 int	main(void)

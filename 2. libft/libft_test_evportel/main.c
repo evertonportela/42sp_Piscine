@@ -385,5 +385,18 @@ int	main(void)
 	printf("   strncmp: %d\n", strncmp(str_strncmp_source_4, str_strncmp_cmp_4, 17));
 	printf("ft_strncmp: %d\n", ft_strncmp(str_strncmp_source_4, str_strncmp_cmp_4, 17));
 
+	printf("\n***************");
+	printf("\n* ft_strlcat ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+	char str_strlcat_source_0[] = "Azul";
+	char str_strlcat_dest_0[] = "o dia";
+	printf("strlcat_source: %s\n", str_strlcat_source_0);
+	printf("strlcat_dest: %s\n", str_strlcat_dest_0);
+	printf("%zu\n", ft_strlcat(str_strlcat_dest_0, str_strlcat_source_0, 7));
+	printf("strlcat_dest+source: %s\n", str_strlcat_dest_0);
+
+	printf("%c", ('t'+256));
+
 	return (0);
 }
