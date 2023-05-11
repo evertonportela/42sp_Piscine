@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 19:40:40 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/11 14:31:18 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/11 16:04:11 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,16 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*allocated;
-	size_t	SIZE_MAX;
-	size_t	totalSize;
+	size_t	size_max;
+	size_t	total_size;
 
-	SIZE_MAX = 18446744073709551615UL;
-	totalSize = nmemb * size;
-	if ((nmemb == 0 && size == 0) || (nmemb == SIZE_MAX && size == SIZE_MAX)){
+	size_max = 18446744073709551615UL;
+	total_size = nmemb * size;
+	if ((nmemb == 0 && size == 0) || (nmemb == size_max && size == size_max))
+	{
 		return (NULL);
 	}
-	allocated = (void *) malloc(totalSize);
+	allocated = (void *) malloc(total_size);
 	if (allocated == NULL)
 	{
 		return (NULL);

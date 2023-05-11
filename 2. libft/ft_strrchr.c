@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 10:35:33 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/09 13:00:14 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/11 16:12:59 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	index;
+	int			index;
 	const char	*initial;
 
 	initial = s;
