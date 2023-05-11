@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 16:41:40 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/11 13:31:03 by evportel         ###   ########.fr       */
+/*   Created: 2023/05/10 19:40:40 by evportel          #+#    #+#             */
+/*   Updated: 2023/05/11 14:08:06 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned long int	length;
+	void	*allocated;
+	size_t	SIZE_MAX;
+	size_t	totalSize;
 
-	length = 0;
-	while (length < n)
-	{
-		((unsigned char *) s)[length] = '\0';
-		length++;
+	SIZE_MAX = 18446744073709551615UL;
+	totalSize = nmemb * size;
+	if ((nmemb == 0 && size == 0) || (nmemb == SIZE_MAX && size == SIZE_MAX)){
+		return (NULL);
 	}
+	allocated = (void *) malloc(totalSize);
+	if (allocated == NULL)
+	{
+		return (NULL);
+	}
+	ft_bzero(allocated, nmemb * size);
+	return (allocated);
 }
