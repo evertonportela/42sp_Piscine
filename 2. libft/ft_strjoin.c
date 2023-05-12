@@ -6,38 +6,34 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 09:40:31 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/12 10:58:53 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/12 16:54:43 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*newStr;
+	char	*new_str;
 	size_t	count;
 	size_t	index;
-	size_t	alocate_src_1;
-	size_t	alocate_src_2;
 
-	alocate_src_1 = ft_strlen(s1);
-	alocate_src_2 = ft_strlen(s2);
-	newStr = (char *) malloc((alocate_src_1 + alocate_src_2 + 1) * sizeof(char));
-	if (!s1 || !s2 || !newStr)
+	new_str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1 * sizeof(char));
+	if (!s1 || !s2 || !new_str)
 		return (NULL);
 	count = 0;
-	while (count < alocate_src_1)
+	while (count < ft_strlen(s1))
 	{
-		newStr[count] = s1[count];
+		new_str[count] = s1[count];
 		count++;
 	}
 	index = 0;
-	while (count < (alocate_src_1 + alocate_src_2))
+	while (count < (ft_strlen(s1) + ft_strlen(s2)))
 	{
-		newStr[count] = s2[index];
+		new_str[count] = s2[index];
 		count++;
 		index++;
 	}
-	newStr[count] = '\0';
-	return (newStr);
+	new_str[count] = '\0';
+	return (new_str);
 }

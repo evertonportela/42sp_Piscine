@@ -21,6 +21,11 @@ int main(void)
 	/* 1 */ check(!memcmp(p, e, 4));
 	/* 2 */ mcheck(p, 4); free(p); showLeaks();
 	/* 3 */ check(ft_calloc(SIZE_MAX, SIZE_MAX) == NULL);
+	/* 4 */ check(ft_calloc(0, 0) == NULL);
 	write(1, "\n", 1);
 	return (0);
 }
+
+/* pull request
+	/ 4 / check(ft_calloc(SIZE_MAX, SIZE_MAX) == NULL);
+*/
