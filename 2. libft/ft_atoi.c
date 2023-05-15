@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 21:53:23 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/10 19:10:54 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/15 11:11:29 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,25 +38,3 @@ int	ft_atoi(const char *nptr)
 	number = number * mult;
 	return (number);
 }
-
-// int	ft_atoi(const char *nptr)
-// {
-// 	int	number;
-// 	int	i;
-// 	int	signal;
-
-// 	signal = 1;
-// 	number = 0;
-// 	i = 0;
-// 	while ((nptr[i] >= '\t' && nptr[i] <= '\r') || nptr[i] == ' ')
-// 		i++;
-// 	if ((nptr[i] == '-' || nptr[i] == '+'))
-// 		if (nptr[i++] == '-')
-// 			signal *= -1;
-// 	while (nptr[i] >= '0' && nptr[i] <= '9')
-// 	{
-// 		number = (nptr[i] - '0') + (number * 10);
-// 		i++;
-// 	}
-// 	return (number * signal);
-// }
