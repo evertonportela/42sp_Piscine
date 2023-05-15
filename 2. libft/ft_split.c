@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 18:15:10 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/14 21:11:28 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/14 21:24:58 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ char	**constructor_word(char **slices, const char *str, char cut)
 		len_word = 0;
 		while (str[len_word] != cut && str[len_word])
 			len_word++;
-		slices[index] = (char *) malloc(len_word * sizeof(char) + 1);		
-		if (slices[index])
+		slices[index] = (char *) malloc(len_word * sizeof(char) + 1);
+		if (slices[index] == NULL)
 			return (go_back(slices));
 		slices[index][len_word] = '\0';
 		while (len_word > 0)
