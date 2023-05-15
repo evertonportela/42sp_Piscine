@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 11:12:04 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/15 12:50:33 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/15 14:52:56 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ static size_t	count_digit(size_t number)
 	if (number == 0)
 		return (1);
 	if (number < 0)
-	number *= -1;
+		number *= -1;
 	digit = 0;
 	while (number > 0)
 	{
-	digit++;
-	number = number / 10;
+		digit++;
+		number = number / 10;
 	}
 	return (digit);
 }
@@ -52,7 +52,7 @@ char	*ft_itoa(int n)
 		string_digit[len_digits + is_negative] = number % 10 + '0';
 		number = number / 10;
 		if (is_negative == 1 && len_digits == 0)
-		string_digit[len_digits] = '-';
+			string_digit[len_digits] = '-';
 	}
 	return (string_digit);
 }
