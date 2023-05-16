@@ -1,3 +1,4 @@
+#include <limits.h>
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -398,5 +399,22 @@ int	main(void)
 
 	printf("%c", ('t'+256));
 
+	printf("\n***************");
+	printf("\n* ft_calloc ***");
+	printf("\n* test_0 ******");
+	printf("\n***************\n");
+
+	void *p_0 = calloc(2,2);
+	printf("1. %p %s\n", p_0, p_0); //free(p_0);
+	
+	size_t size_max = 18446744073709551615UL;
+	void *p_1 = calloc(size_max, size_max);
+	printf("2. %p %s\n", p_1, p_1); //free(p_1);
+
+	void *p_2 = calloc(INT_MAX, INT_MAX);
+	printf("3. %p %s\n", p_2, p_2); //free(p_2);
+
+	void *p_3 = calloc(0, 0);
+	printf("4. %p %s\n", p_3, p_3); //free(p_3);
 	return (0);
 }
