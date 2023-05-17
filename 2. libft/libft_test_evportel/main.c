@@ -405,38 +405,41 @@ int	main(void)
 	printf("\n***************\n");
 
 	void *p_0 = calloc(2,2);
-	printf("1. %p %s\n", p_0, (char*)p_0); //free(p_0);
+	printf("1. %p %s\n", p_0, (char*)p_0); free(p_0);
 	
 	size_t size_max = 18446744073709551615UL;
 	void *p_1 = calloc(size_max, size_max);
-	printf("3. %p %s\n", p_1, (char*)p_1); //free(p_1);
+	printf("3. %p %s\n", p_1, (char*)p_1); free(p_1);
 
 	void *p_2 = calloc(INT_MAX, INT_MAX);
-	printf("4. %p %s\n", p_2, (char*)p_2); //free(p_2);
+	printf("4. %p %s\n", p_2, (char*)p_2); free(p_2);
 
-	void *p_3 = calloc(0, 0);
-	printf("5. %p %s\n", p_3, (char*)p_3); //free(p_3);
+	void *p_3 = calloc(INT_MIN, INT_MIN);
+	printf("5. %p %s\n", p_3, (char*)p_3); free(p_3);
 
-	void *p_4 = calloc(0, 5);
-	printf("6. %p %s\n", p_4, (char*)p_4); //free(p_3);
+	void *p_4 = calloc(0, 0);
+	printf("6. %p %s\n", p_4, (char*)p_4); free(p_4);
+
+	void *p_5 = calloc(0, 5);
+	printf("7. %p %s\n", p_5, (char*)p_5); free(p_5);
 	
-	void *p_5 = calloc(5, 0);
-	printf("7. %p %s\n", p_5, (char*)p_5); //free(p_3);
+	void *p_6 = calloc(5, 0);
+	printf("8. %p %s\n", p_6, (char*)p_6); free(p_6);
 
-	void *p_6 = calloc(-5, -5);
-	printf("8. %p %s\n", p_6, (char*)p_6); //free(p_3);
+	void *p_7 = calloc(-5, -5);
+	printf("9. %p %s\n", p_7, (char*)p_7); free(p_7);
 
-	void *p_7 = calloc(0, -5);
-	printf("9. %p %s\n", p_7, (char*)p_7); //free(p_3);
+	void *p_8 = calloc(0, -5);
+	printf("10. %p %s\n", p_8, (char*)p_8); free(p_8);
 	
-	void *p_8 = calloc(-5, 0);
-	printf("10. %p %s\n", p_8, (char*)p_8); //free(p_3);
+	void *p_9 = calloc(-5, 0);
+	printf("11. %p %s\n", p_9, (char*)p_9); free(p_9);
 
-	void *p_9 = calloc(3, -5);
-	printf("11. %p %s\n", p_9, (char*)p_9); //free(p_3);
+	void *p_10 = calloc(3, -5);
+	printf("12. %p %s\n", p_10, (char*)p_10); free(p_10);
 	
-	void *p_10 = calloc(-5, 3);
-	printf("12. %p %s\n", p_10, (char*)p_10); //free(p_3);
-	
+	void *p_11 = calloc(-5, 3);
+	printf("13. %p %s\n", p_11, (char*)p_11); free(p_11);
+
 	return (0);
 }
