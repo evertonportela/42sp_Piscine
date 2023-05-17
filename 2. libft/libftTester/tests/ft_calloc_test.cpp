@@ -26,7 +26,20 @@ int main(void)
 	/* 4 */ check(ft_calloc(INT_MAX, INT_MAX) == NULL);
 	p = ft_calloc(0, 0);
 	/* 5 */ check(p != NULL); free(p); //showLeaks();
-	// printf("%p", ft_calloc(0, 0));
+	p = ft_calloc(0, 5);
+	/* 6 */ check(p != NULL); free(p); //showLeaks();
+	p = ft_calloc(5, 0);
+	/* 7 */ check(p != NULL); free(p); //showLeaks();
+	p = ft_calloc(-5, -5);
+	/* 8 */ check(p == NULL); free(p); //showLeaks();
+	p = ft_calloc(0, -5);
+	/* 9 */ check(p != NULL); free(p); //showLeaks();
+	p = ft_calloc(-5, 0);
+	/* 10 */ check(p != NULL); free(p); //showLeaks();
+	p = ft_calloc(3, -5);
+	/* 11 */ check(p == NULL); free(p); //showLeaks();
+	p = ft_calloc(-5, 3);
+	/* 12 */ check(p == NULL); free(p); //showLeaks();
 
 	write(1, "\n", 1);
 	return (0);
