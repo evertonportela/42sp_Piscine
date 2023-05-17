@@ -6,7 +6,7 @@
 #    By: evportel <evportel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 10:41:40 by evportel          #+#    #+#              #
-#    Updated: 2023/05/16 10:09:05 by evportel         ###   ########.fr        #
+#    Updated: 2023/05/17 19:07:10 by evportel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,18 +20,28 @@ SOURCES			= ft_isalpha.c	ft_isdigit.c	ft_isalnum.c	ft_isascii.c	ft_isprint.c\
 
 OBJECTS			= $(SOURCES:%.c=%.o)
 
+SOURCES_BONUS	= ft_lstnew_bonus.c
+
+OBJECTS_BONUS	= $(SOURCES_BONUS:%.c=%.o)
+
 NAME			= libft.a
 CC				= cc
 FLAGS			= -Wall -Wextra -Werror
 RM				= rm -f
 
+# MAKE
 all:			$(NAME)
 
-$(NAME):	$(OBJECTS)
-	ar -rcs $(NAME) $(OBJECTS)
+$(NAME):		$(OBJECTS)
+				ar -rcs $(NAME) $(OBJECTS)
 
-%.o:		%.c
-	$(CC) $(FLAGS) -I ./libft.h -c $< -o $@
+%.o:			%.c
+				$(CC) $(FLAGS) -I ./libft.h -c $< -o $@
+
+# MAKE BONUS
+bonus:			$(OBJECTS_BONUS)
+				ar -rcs $(NAME) $(OBJECTS_BONUS)
+
 
 clean:
 	$(RM) $(OBJECTS)
@@ -39,4 +49,5 @@ clean:
 fclean:			clean
 	$(RM) $(NAME)
 
-re: fclean clean all
+re: fclean all
+
