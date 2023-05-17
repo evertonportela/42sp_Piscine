@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 10:10:14 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/16 11:18:00 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/17 10:26:21 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_putchar_fd(nbr % 10 + '0', fd);
 }
-
-
