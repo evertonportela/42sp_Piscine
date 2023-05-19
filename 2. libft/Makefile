@@ -6,7 +6,7 @@
 #    By: evportel <evportel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/05 10:41:40 by evportel          #+#    #+#              #
-#    Updated: 2023/05/17 19:07:10 by evportel         ###   ########.fr        #
+#    Updated: 2023/05/19 17:29:54 by evportel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,12 +42,10 @@ $(NAME):		$(OBJECTS)
 bonus:			$(OBJECTS_BONUS)
 				ar -rcs $(NAME) $(OBJECTS_BONUS)
 
-
 clean:
-	$(RM) $(OBJECTS)
+	$(RM) $(OBJECTS) $(OBJECTS_BONUS)
 
 fclean:			clean
 	$(RM) $(NAME)
 
 re: fclean all
-
