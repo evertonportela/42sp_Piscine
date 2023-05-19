@@ -13,12 +13,3 @@
 [submodule "02-Get-Next-Line"]
 	path = 02-Get-Next-Line
 	url = https://github.com/evertonportela/42cursus-02-Get-Next-Line
-
-# Nome do Atalho
-# [submodule "00-Piscine-C"]
-
-# Caminho no diretorio atual
-# 	path = 00-Piscine-C
-
-# Caminho do diretorio destino
-# 	url = https://github.com/evertonportela/42cursus-Piscine-C
