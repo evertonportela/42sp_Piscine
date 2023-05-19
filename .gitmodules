@@ -1,0 +1,3 @@
+[submodule "00-Piscine-C"]
+	path = 00-Piscine-C
+	url = https://github.com/evertonportela/42cursus-Piscine-C.git
