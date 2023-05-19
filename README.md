@@ -22,8 +22,8 @@
 
 <strong>Developed during the step cadet, April 2023 - The Project Warm Up.</strong><br>
 
-* [`P2P 101`](#)			- Development of Non-aggressive Communication.
-* [`Basecamp-Reloaded`](1.%2042cursus-WarmUp-SP/)			- Returning from the 42school selection process, remembering exercices.
+* [`P2P 101`](#)									- Development of Non-aggressive Communication.
+* [`Basecamp-Reloaded`](1.%2042cursus-WarmUp-SP/)	- Returning from the 42school selection process, remembering exercices.
 
 <h2 align="center">
 	42 cursus May 01
@@ -35,4 +35,5 @@
 <strong>Developed during the step cadet, May 2023 - The 42 Cursus.</strong><br>
 
 * [`libft`](2.%20libft/)			- Your very first own library.
+* [`Get Next Line`](#)				- Reading a line from a fd is way too tedious
 
