@@ -1,4 +1,4 @@
-# 42SP - Projects
+# 42SP - Projects - roadmap
 
 <h2 align="center">
 	Piscine Mar 23
@@ -22,6 +22,17 @@
 
 <strong>Developed during the step cadet, April 2023 - The Project Warm Up.</strong><br>
 
-* [`P2P 101`](#)			- First challenge involving git commands.
+* [`P2P 101`](#)			- Development of Non-aggressive Communication.
 * [`Basecamp-Reloaded`](1.%2042cursus-WarmUp-SP/)			- Returning from the 42school selection process, remembering exercices.
+
+<h2 align="center">
+	42 cursus May 01
+</h2>
+<p align="center">
+	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=21&coalitionId=undefined" alt="evportel's 42 stats" /></a>
+</p>
+
+<strong>Developed during the step cadet, May 2023 - The 42 Cursus.</strong><br>
+
+* [`libft`](2.%20libft/)			- Your very first own library.
 
