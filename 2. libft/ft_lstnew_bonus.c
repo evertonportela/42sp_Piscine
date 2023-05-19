@@ -6,7 +6,7 @@
 /*   By: evportel <evportel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 18:35:20 by evportel          #+#    #+#             */
-/*   Updated: 2023/05/17 19:25:23 by evportel         ###   ########.fr       */
+/*   Updated: 2023/05/19 12:34:05 by evportel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,10 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	void	content;
+	t_list	*node;
+
+	node = malloc (sizeof(t_list));
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
