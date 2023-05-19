@@ -1,0 +1,24 @@
+[submodule "00-Piscine-C"]
+	path = 00-Piscine-C
+	url = https://github.com/evertonportela/42cursus-Piscine-C
+
+[submodule "00-Warm-Up"]
+	path = 00-Warm-Up
+	url = https://github.com/evertonportela/42cursus-00-Warm-Up
+
+[submodule "01-libft"]
+	path = 01-Libft
+	url = https://github.com/evertonportela/42cursus-01-Libft
+
+[submodule "02-Get-Next-Line"]
+	path = 02-Get-Next-Line
+	url = https://github.com/evertonportela/42cursus-02-Get-Next-Line
+
+# Nome do Atalho
+# [submodule "00-Piscine-C"]
+
+# Caminho no diretorio atual
+# 	path = 00-Piscine-C
+
+# Caminho do diretorio destino
+# 	url = https://github.com/evertonportela/42cursus-Piscine-C
