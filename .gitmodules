@@ -9,4 +9,4 @@
 	url = https://github.com/evertonportela/42cursus-01-Libft.git
 [submodule "02-Get-Next-Line"]
 	path = 02-Get-Next-Line
-	url = https://github.com/evertonportela/42cursus-02-Get-Next-Line.git
+	url = git@github.com:evertonportela/42cursus-02-Get-Next-Line.git
