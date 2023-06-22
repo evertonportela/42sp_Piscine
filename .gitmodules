@@ -10,3 +10,6 @@
 [submodule "02-Get-Next-Line"]
 	path = 02-Get-Next-Line
 	url = git@github.com:evertonportela/42cursus-02-Get-Next-Line.git
+[submodule "03-Ft-Printf"]
+	path = 03-Ft-Printf
+	url = git@github.com:evertonportela/42cursus-03-FT-Printf.git
