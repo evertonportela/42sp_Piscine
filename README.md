@@ -44,6 +44,8 @@
 * [`get_next_line`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- Reading a line from a fd is way too tedious
 * [`ft_printf`](https://github.com/evertonportela/42cursus-03-FT-Printf/tree/master)	- Because ft_putnbr() and ft_putstr() aren’t enough
 * [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise
+* [`Fract-ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
+
 
 <!-- comment * [`born2beroot`](#)	- This document is a System Administration related exercise -->
 
@@ -52,3 +54,4 @@
 
 <!-- Atualizar submodulo existente, dentro do repositório desejado, fazer um pull
 ** git pull origin main -->
+

@@ -16,3 +16,6 @@
 [submodule "04-Born2BeRoot"]
 	path = 04-Born2BeRoot
 	url = git@github.com:evertonportela/42cursus-04-Born2BeRoot.git
+[submodule "05-Fract-ol"]
+	path = 05-Fract-ol
+	url = git@github.com:evertonportela/42cursus-05-Fract-ol.git
