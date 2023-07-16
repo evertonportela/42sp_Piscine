@@ -46,7 +46,11 @@
 * [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise
 * [`Fract-ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
 
-
+<p align="center">
+	<a href="https://profile.intra.42.fr/users/evportel">
+		<img height="400px" src="assets/intra_holy_graph.png"/>
+	</a>
+</p>
 <!-- comment * [`born2beroot`](#)	- This document is a System Administration related exercise -->
 
 <!-- Inserir novo submodulo
