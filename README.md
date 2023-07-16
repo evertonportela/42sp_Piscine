@@ -43,6 +43,8 @@
 * [`libft`](https://github.com/evertonportela/42cursus-01-Libft/tree/main)	- Your very first own library.
 * [`get_next_line`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- Reading a line from a fd is way too tedious
 * [`ft_printf`](https://github.com/evertonportela/42cursus-03-FT-Printf/tree/master)	- Because ft_putnbr() and ft_putstr() aren’t enough
+* [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise
+
 <!-- comment * [`born2beroot`](#)	- This document is a System Administration related exercise -->
 
 <!-- Inserir novo submodulo
