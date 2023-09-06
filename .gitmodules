@@ -19,3 +19,6 @@
 [submodule "05-Fract-ol"]
 	path = 05-Fract-ol
 	url = git@github.com:evertonportela/42cursus-05-Fract-ol.git
+[submodule "06-Pipex"]
+	path = 06-Pipex
+	url = git@github.com:evertonportela/42cursus-06-Pipex.git
