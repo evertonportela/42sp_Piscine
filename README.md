@@ -38,13 +38,14 @@
 	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=21&coalitionId=undefined" alt="evportel's 42 stats" /></a>
 </p>
 
-<strong>Developed during the step cadet, May 2023 - The 42 Cursus.</strong><br>
+<strong>Developed during the cadet stage, from May 2023 - The 42 Cursus.</strong><br>
 
 * [`libft`](https://github.com/evertonportela/42cursus-01-Libft/tree/main)	- Your very first own library.
 * [`get_next_line`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- Reading a line from a fd is way too tedious
 * [`ft_printf`](https://github.com/evertonportela/42cursus-03-FT-Printf/tree/master)	- Because ft_putnbr() and ft_putstr() aren’t enough
 * [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise
-* [`Fract-ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
+* [`Fract-Ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
+* [`Pipex`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	-  This project will let you discover in detail a UNIX mechanism that you already know by using it in your program. 
 
 <p align="center">
 	<a href="https://profile.intra.42.fr/users/evportel">
