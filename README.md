@@ -38,12 +38,12 @@
 	<a href="https://profile.intra.42.fr/users/evportel"><img src="https://game.42sp.org.br/static/assets/achievements/phase_onee.png" alt="evportel's 42 stats" /></a>
 </p>
 <p align="center">
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/libftm.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/get_next_linee.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/ft_printfe.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/born2berootm.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/pipexe.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/libftm.png" width="100px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/get_next_linee.png" width="100px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/ft_printfe.png" width="100px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/born2berootm.png" width="100px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" width="100px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/pipexe.png" width="100px"/></a>
 </p>
 
 <strong>Developed during the cadet stage, from May to October 2023 - The 42 Cursus.</strong><br>
