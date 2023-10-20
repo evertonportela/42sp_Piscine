@@ -28,17 +28,25 @@
 
 <strong>Developed during the step cadet, April 2023 - The Project Warm Up.</strong><br>
 
-* [`P2P 101`](#)									- Development of Non-aggressive Communication.
+* [`P2P 101`](#)	- Development of Non-aggressive Communication.
 * [`Basecamp-Reloaded`](https://github.com/evertonportela/42cursus-00-Warm-Up/tree/main/Basecamp-Reloaded)	- Returning from the 42school selection process, remembering exercices.
 
 <h2 align="center">
-	42 cursus May 01
+	42 cursus Commom Core
 </h2>
 <p align="center">
-	<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clgz3vp5u001608l5gzuhclek/stats?cursusId=21&coalitionId=undefined" alt="evportel's 42 stats" /></a>
+	<a href="https://profile.intra.42.fr/users/evportel"><img src="https://game.42sp.org.br/static/assets/achievements/phase_onee.png" alt="evportel's 42 stats" /></a>
+</p>
+<p align="center">
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/libftm.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/get_next_linee.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/ft_printfe.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/born2berootm.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/pipexe.png" width="70px"/></a>
 </p>
 
-<strong>Developed during the cadet stage, from May 2023 - The 42 Cursus.</strong><br>
+<strong>Developed during the cadet stage, from May to October 2023 - The 42 Cursus.</strong><br>
 
 * [`libft`](https://github.com/evertonportela/42cursus-01-Libft/tree/main)	- Your very first own library.
 * [`get_next_line`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- Reading a line from a fd is way too tedious
@@ -47,6 +55,32 @@
 * [`Fract-Ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
 * [`Pipex`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	-  This project will let you discover in detail a UNIX mechanism that you already know by using it in your program. 
 
+----
+<!--
+<p align="center">
+	<a href="https://profile.intra.42.fr/users/evportel"><img src="https://game.42sp.org.br/static/assets/achievements/phase_onee.png" alt="evportel's 42 stats" /></a>
+</p>
+<p align="center">
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
+</p>
+-->
+
+<strong>Developed during the cadet stage, from October 2023 ...- The 42 Cursus.</strong><br>
+
+* [`push_swap`](https://github.com/evertonportela/42cursus-01-Libft/tree/main)	- Because Swap_push isn’t as natural.
+* [`minishell`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- As beautiful as a shell.
+
+<!-- * [`ft_printf`](https://github.com/evertonportela/42cursus-03-FT-Printf/tree/master)	- Because ft_putnbr() and ft_putstr() aren’t enough 
+* [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise
+* [`Fract-Ol`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	- Computer Graphics Fractals - This project is about creating graphically beautiful fractals
+* [`Pipex`](https://github.com/evertonportela/42cursus-05-Fract-ol/tree/master)	-  This project will let you discover in detail a UNIX mechanism that you already know by using it in your program. 
+-->
+----
 <p align="center">
 	<a href="https://profile.intra.42.fr/users/evportel">
 		<img height="400px" src="assets/intra_holy_graph.png"/>
