@@ -62,13 +62,11 @@
 </p>
 <p align="center">
 	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
-	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/.png" width="70px"/></a>
 </p>
 -->
+<p align="center">
+	<a href="#"><img src="https://game.42sp.org.br/static/assets/achievements/push_swapn.png" width="100px"/></a>
+</p>
 
 <strong>Developed during the cadet stage, from October 2023 ...- The 42 Cursus.</strong><br>
 
@@ -90,7 +88,7 @@
 <!-- comment * [`born2beroot`](#)	- This document is a System Administration related exercise -->
 
 <!-- Inserir novo submodulo
-** git submodule add git@github.com:evertonportela/42cursus-03-FT-Printf.git pasta/meu-submodule -->
+** git submodule add git@github.com:evertonportela/42cursus-03-FT-Printf.git nome-pasta-meu-submodule -->
 
 <!-- Atualizar submodulo existente, dentro do repositório desejado, fazer um pull
 ** git pull origin main -->
