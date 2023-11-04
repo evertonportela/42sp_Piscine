@@ -70,8 +70,8 @@
 
 <strong>Developed during the cadet stage, from October 2023 ...- The 42 Cursus.</strong><br>
 
-* [`push_swap`](https://github.com/evertonportela/42cursus-01-Libft/tree/main)	- Because Swap_push isn’t as natural.
-* [`minishell`](https://github.com/evertonportela/42cursus-02-Get-Next-Line/tree/master)	- As beautiful as a shell.
+* [`push_swap`](https://github.com/evertonportela/42cursus-07-Push_swap/tree/master)	- Because Swap_push isn’t as natural.
+* [`minishell`](https://github.com/evertonportela/42cursus-08-Minishell/tree/master)	- As beautiful as a shell.
 
 <!-- * [`ft_printf`](https://github.com/evertonportela/42cursus-03-FT-Printf/tree/master)	- Because ft_putnbr() and ft_putstr() aren’t enough 
 * [`Born2BeRoot`](https://github.com/evertonportela/42cursus-04-Born2BeRoot/tree/master)	- This document is a System Administration related exercise

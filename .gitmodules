@@ -25,3 +25,6 @@
 [submodule "07-Push_Swap"]
 	path = 07-Push_Swap
 	url = git@github.com:evertonportela/42cursus-07-Push_swap.git
+[submodule "08-Minishell"]
+	path = 08-Minishell
+	url = git@github.com:evertonportela/42cursus-08-Minishell.git
