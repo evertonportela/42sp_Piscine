@@ -22,6 +22,3 @@
 [submodule "06-Pipex"]
 	path = 06-Pipex
 	url = git@github.com:evertonportela/42cursus-06-Pipex.git
-[submodule "07-Push_Swap"]
-	path = 07-Push_Swap
-	url = git@github.com:evertonportela/42cursus-07-Push_swap.git
